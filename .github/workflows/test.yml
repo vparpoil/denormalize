@@ -20,7 +20,7 @@ jobs:
         run: |
           meteor create --release ${{ matrix.meteor }} --bare test
           cd test
-          meteor npm i --save selenium-webdriver@3.6.0 chromedriver@2.46.0 simpl-schema@1.13.1 chai
+          meteor npm i --save selenium-webdriver@3.6.0 chromedriver@75.1.0 simpl-schema@1.13.1 chai
       - name: Test local
         working-directory: ./
         run: meteor test-packages --once --driver-package meteortesting:mocha ./
